@@ -148,6 +148,18 @@
         background-color: #FFFFFF !important;
         background-image: linear-gradient(#FFFFFF, #FFFFFF) !important;
       }
+      .dark-lock-title {
+        color: #181512 !important;
+        -webkit-text-fill-color: #181512 !important;
+      }
+      .dark-lock-body {
+        color: #4A433C !important;
+        -webkit-text-fill-color: #4A433C !important;
+      }
+      .dark-lock-muted {
+        color: #7C7267 !important;
+        -webkit-text-fill-color: #7C7267 !important;
+      }
     }
 
     /* Gmail / Outlook Web & App Dark Mode Attributes */
@@ -160,6 +172,21 @@
     [data-ogsc] .hero-copy-cell {
       background-color: #FFFFFF !important;
       background-image: linear-gradient(#FFFFFF, #FFFFFF) !important;
+    }
+    [data-ogsc] .dark-lock-title,
+    [data-ogsb] .dark-lock-title {
+      color: #181512 !important;
+      -webkit-text-fill-color: #181512 !important;
+    }
+    [data-ogsc] .dark-lock-body,
+    [data-ogsb] .dark-lock-body {
+      color: #4A433C !important;
+      -webkit-text-fill-color: #4A433C !important;
+    }
+    [data-ogsc] .dark-lock-muted,
+    [data-ogsb] .dark-lock-muted {
+      color: #7C7267 !important;
+      -webkit-text-fill-color: #7C7267 !important;
     }
 
     /* Equal Height Outdoor Strip at the Bottom */
@@ -232,7 +259,7 @@
 
   <!-- Preheader Text -->
   <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: Arial, sans-serif;">
-    VIP Black Friday Sale - Save The Date. Members receive 24 hours of early access on 20th of November before doors open to the public on aleya.com.au.
+    VIP Black Friday Sale - Save The Date. Up to 20% off plus free shipping only to our VIP clients, with 24 hours of early access on 20th of November.
   </div>
 
   <!-- Outer Wrapper Table -->
@@ -264,8 +291,8 @@
               <a href="https://aleya.com.au/" target="_blank" style="text-decoration: none;">
                 <img mc:edit="brand_logo" class="light-logo" src="https://brand-assets.mailchimp.com/01KTG6WNS9Q353PB35KCW7EDCH.png" alt="ALEYA" width="170" border="0" style="width: 170px; max-width: 170px; height: auto; display: block; margin: 0 auto; border: 0;" />
               </a>
-              <p mc:edit="logo_subtext" class="gothic" style="margin: 10px 0 0 0; font-family: 'Sackers Gothic', 'Montserrat', 'Optima', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; font-weight: 400; letter-spacing: 3.5px; text-transform: uppercase; color: #7C7267; mso-line-height-rule: exactly;">
-                DESIGNED IN AUSTRALIA
+              <p mc:edit="logo_subtext" class="gothic dark-lock-muted" style="margin: 10px 0 0 0; font-family: 'Sackers Gothic', 'Montserrat', 'Optima', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; font-weight: 400; letter-spacing: 3.5px; text-transform: uppercase; color: #7C7267; mso-line-height-rule: exactly;">
+                <span style="color: #7C7267;">DESIGNED IN AUSTRALIA</span>
               </p>
             </td>
           </tr>
@@ -279,21 +306,26 @@
             </td>
           </tr>
 
-          <!-- Editorial Hero Copy Block -->
+          <!-- Editorial Hero Copy Block (Dark-Mode Text Locked for iOS Gmail) -->
           <tr>
             <td align="center" bgcolor="#FFFFFF" class="mobile-pad hero-copy-cell" style="background-color: #FFFFFF; background-image: linear-gradient(#FFFFFF, #FFFFFF); padding: 46px 44px 44px 44px;">
-              <p mc:edit="hero_eyebrow" class="gothic" style="margin: 0 0 14px 0; font-family: 'Sackers Gothic', 'Montserrat', 'Optima', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: #7C7267; mso-line-height-rule: exactly;">
-                VIP MEMBER EXCLUSIVE
+              <p mc:edit="hero_eyebrow" class="gothic dark-lock-muted" style="margin: 0 0 14px 0; font-family: 'Sackers Gothic', 'Montserrat', 'Optima', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: #7C7267; mso-line-height-rule: exactly;">
+                <span style="color: #7C7267;">VIP MEMBER EXCLUSIVE</span>
               </p>
 
               <!-- Exact Creative Director Heading -->
-              <h1 mc:edit="hero_main_title" class="serif bf-mega-title" style="margin: 0 0 22px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', 'Didot', 'Bodoni MT', Georgia, 'Times New Roman', serif; font-size: 40px; line-height: 48px; font-weight: 500; letter-spacing: 1.5px; color: #181512; mso-line-height-rule: exactly;">
-                VIP Black Friday Sale - Save The Date
+              <h1 mc:edit="hero_main_title" class="serif bf-mega-title dark-lock-title" style="margin: 0 0 14px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', 'Didot', 'Bodoni MT', Georgia, 'Times New Roman', serif; font-size: 40px; line-height: 48px; font-weight: 500; letter-spacing: 1.5px; color: #181512; mso-line-height-rule: exactly;">
+                <span style="color: #181512;">VIP Black Friday Sale - Save The Date</span>
               </h1>
 
+              <!-- VIP Offer Subtitle Requested by Client -->
+              <p mc:edit="hero_vip_offer" class="serif dark-lock-title" style="margin: 0 0 22px 0; font-family: 'Monterchi Serif', 'Cormorant Garamond', 'Didot', 'Bodoni MT', Georgia, 'Times New Roman', serif; font-size: 22px; line-height: 29px; font-weight: 500; font-style: italic; color: #181512; max-width: 460px; mso-line-height-rule: exactly;">
+                <span style="color: #181512;">Up to 20% off plus free shipping only to our VIP clients.</span>
+              </p>
+
               <!-- 16px Open Sauce Natural Copy -->
-              <p mc:edit="hero_body_copy" class="sans" style="margin: 0 0 32px 0; font-family: 'Open Sauce', 'Open Sauce One', 'Open Sauce Sans', 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 26px; font-weight: 400; color: #4A433C; max-width: 470px; mso-line-height-rule: exactly;">
-                This is an exclusive VIP sale. As a member, you receive 24 hours of early access to shop our signature fur coat collection before the sale goes live to the public. Set your reminder and visit the website the moment doors open.
+              <p mc:edit="hero_body_copy" class="sans dark-lock-body" style="margin: 0 0 32px 0; font-family: 'Open Sauce', 'Open Sauce One', 'Open Sauce Sans', 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 26px; font-weight: 400; color: #4A433C; max-width: 470px; mso-line-height-rule: exactly;">
+                <span style="color: #4A433C;">This is an exclusive VIP sale. As a member, you receive 24 hours of early access to shop our signature fur coat collection before the sale goes live to the public. Set your reminder and visit the website the moment doors open.</span>
               </p>
 
               <!-- Bulletproof VML Ghost Button -->
